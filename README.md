@@ -1,10 +1,11 @@
 # Detroit Tigers Offense Analysis
-Detroit Tigers Hitter Analysis
-Project Overview
+Detroit Tigers Hitter Analysis Project Overview
+
 This project analyzes Detroit Tigers hitters using traditional offensive statistics, Statcast expected metrics, quality-of-contact measures, and plate-discipline indicators.
+
 The goal is to evaluate which hitters showed the strongest underlying offensive profiles and identify players whose actual results differed meaningfully from their expected performance.
-Research Question
-Which Detroit Tigers hitters show the strongest underlying offensive profiles, and whose actual results differ most from expected performance?
+Research Question: Which Detroit Tigers hitters show the strongest underlying offensive profiles, and whose actual results differ most from expected performance?
+
 Data
 The analysis uses 2026 Detroit Tigers hitting data from Baseball Savant / Statcast.
 The primary analysis includes hitters with at least 100 plate appearances to reduce the impact of extremely small samples.
@@ -23,6 +24,7 @@ Metrics Used
 - xwOBA
 - xBA
 - xSLG
+
 Methodology
 Actual vs. Expected Performance
 Three gap metrics were calculated:
