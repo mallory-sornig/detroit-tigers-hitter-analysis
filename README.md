@@ -1,4 +1,4 @@
-# Detroit Tigers Hitter Analysis
+# Detroit Tigers Hitter Analysis 2026
 
 A baseball analytics project evaluating Detroit Tigers hitters using Statcast expected metrics, quality-of-contact indicators, and plate-discipline measures.
 
