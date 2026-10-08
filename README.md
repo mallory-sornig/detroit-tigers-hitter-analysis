@@ -237,30 +237,6 @@ View the full notebook here:
 - Baseball Savant / Statcast
 - GitHub
 
----
-
-## Repository Structure
-
-```text
-detroit-tigers-hitter-analysis/
-│
-├── README.md
-│
-├── data/
-│   └── tigers_2026_raw.csv
-│
-├── notebooks/
-│   └── tigers_hitter_analysis.ipynb
-│
-├── visuals/
-│   ├── actual_vs_expected_fixed.png
-│   ├── quality_of_contact_python.png
-│   ├── plate_discipline_python.png
-│   └── sustainability_score_python.png
-│
-└── notes/
-    └── methodology.md
-```
 
 ---
 
