@@ -45,7 +45,7 @@ Metrics included:
 
 ## Actual vs. Expected Offensive Performance
 
-![Actual vs Expected](visuals/actual_vs_expected_fixed.png)
+![Actual vs Expected](visuals/actual_vs_expected_python%20(2).png)
 
 This scatterplot compares actual **wOBA** with **xwOBA**.
 
