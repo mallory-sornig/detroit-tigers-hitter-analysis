@@ -1,0 +1,74 @@
+Methodology
+This project evaluates Detroit Tigers hitters using a combination of traditional offensive statistics, Statcast expected metrics, quality-of-contact indicators, and plate-discipline measures. The goal is to identify which hitters showed the strongest underlying offensive profiles and whether their actual results were supported by their expected performance.
+Player Sample
+The main analysis includes Tigers hitters with at least 100 plate appearances. Players below this threshold were excluded from the primary comparisons because very small samples can produce unstable rate statistics and misleading conclusions.
+Sample-size categories used in the workbook:
+- Large Sample: 500+ PA
+- Medium Sample: 250–499 PA
+- Small Sample: 100–249 PA
+- Very Small Sample: Under 100 PA
+Metrics Used
+wOBA — Weighted On-Base Average
+Measures overall offensive production while assigning different values to different outcomes. Extra-base hits are weighted more heavily than singles or walks.
+xwOBA — Expected Weighted On-Base Average
+Estimates a hitter’s expected offensive production based on underlying factors such as quality of contact and plate outcomes.
+xBA — Expected Batting Average
+Estimates what a hitter’s batting average would be expected to look like based on the quality of balls put in play.
+xSLG — Expected Slugging Percentage
+Estimates expected power production based on contact quality.
+Hard-Hit %
+Percentage of batted balls hit at a high exit velocity. Higher values generally indicate more consistent hard contact.
+Barrel %
+Percentage of batted balls classified as barrels, which combine optimal exit velocity and launch angle and are strongly associated with extra-base damage.
+BB/K Ratio
+Calculated as:
+BB% ÷ K%
+Higher values generally indicate stronger plate discipline because the hitter walks more frequently relative to how often they strike out.
+Actual vs. Expected Performance
+Three gap metrics were calculated:
+xwOBA Gap
+xwOBA - wOBA
+- Positive value = expected production was higher than actual production
+- Negative value = actual production exceeded expected production
+xSLG Gap
+xSLG - SLG
+- Positive value = expected power production exceeded actual slugging
+- Negative value = actual slugging exceeded expected slugging
+AVG Gap
+xBA - AVG
+- Positive value = expected batting average was higher than actual batting average
+- Negative value = actual batting average exceeded expected batting average
+Performance Categories
+Players were categorized using the xwOBA Gap:
+- Underperforming Expected Results: xwOBA Gap ≥ 0.025
+- Outperforming Expected Results: xwOBA Gap ≤ -0.025
+- Results Match Expectations: xwOBA Gap between -0.025 and 0.025
+These categories are intended as descriptive indicators rather than predictions of future performance.
+Offensive Sustainability Score
+To compare hitters across metrics that use different scales, each player was converted to a percentile rank within the selected Tigers sample.
+The Sustainability Score combines:
+- xwOBA — 40%
+- Hard-Hit % — 25%
+- Barrel % — 20%
+- BB/K Ratio — 15%
+Formula:
+100 × [(xwOBA Percentile × 0.40) + (Hard-Hit Percentile × 0.25) + (Barrel Percentile × 0.20) + (BB/K Percentile × 0.15)]
+The score ranges from approximately 0–100, with higher values representing a stronger overall underlying offensive profile relative to the other Tigers hitters included in the analysis.
+Important Interpretation Note
+The Sustainability Score is not a predictive model and should not be interpreted as a forecast of future performance. It is an analyst-defined composite score designed to summarize several offensive indicators into one relative ranking.
+Limitations
+This analysis does not account for every factor that influences offensive performance. Important limitations include:
+- rankings are relative only to the selected Tigers hitters, not all MLB players
+- some players have much smaller samples than others
+- injuries and playing-time changes are not modeled
+- park effects are not included
+- opponent quality is not included
+- baserunning and defensive value are excluded
+- platoon splits are not considered
+- expected statistics are estimates, not guarantees of future results
+- Sustainability Score weights were chosen for this project and are not an official MLB metric
+Data and Tools
+Data: Baseball Savant / Statcast
+Analysis: Microsoft Excel
+Repository: GitHub
+Season: 2026
